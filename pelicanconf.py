@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'https://tohuw.net'
+SITEURL = 'http://tohuwnet.local'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
@@ -17,7 +17,7 @@ THEME = 'themes/qalal'
 # THEME = 'simple'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
-PLUGIN_PATHS = ['pelican-plugins']
+# PLUGIN_PATHS = ['pelican-plugins']
 # PLUGINS = ['tipue_search']
 # MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
 # PYGMENTS_RST_OPTIONS = []
@@ -26,7 +26,7 @@ TYPOGRIFY = True
 OUTPUT_PATH = 'output/'
 DELETE_OUTPUT_DIRECTORY = False
 WRITE_SELECTED = []
-OUTPUT_RETENTION = ( ".git", )
+# OUTPUT_RETENTION = ( ".git", )
 OUTPUT_SOURCES = False
 OUTPUT_SOURCES_EXTENSION = '.text'
 IGNORE_FILES = ['.*']
@@ -127,9 +127,9 @@ AUTHOR_SAVE_AS = ''
 ## Analytics
 #GOOGLE_ANALYTICS = 
 #GOSQUARED_SITENAME =  
-PIWIK_URL = 'tohuw.net/stats'
+# PIWIK_URL = 'tohuw.net/stats'
 # PIWIK_SSL_URL = 'tohuw.net/stats'
-PIWIK_SITE_ID = 1
+# PIWIK_SITE_ID = 1
 
 LINKS = (('HighExecutive', 'http://highexecutive.net'),
          ('Uber Marianne', 'http://ubermarianne.net'),
