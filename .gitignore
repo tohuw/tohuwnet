@@ -1,9 +1,10 @@
-# Ignore common temp and swap files
+# Ignore common temp, swap and bytecode files
 *.swn
 *.swo
 *.swp
 .~*
 .#*
+*.pyc
 
 ## Ignore site-specific files...
 # Pelican
