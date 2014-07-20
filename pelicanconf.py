@@ -13,7 +13,7 @@ TIMEZONE = 'America/New_York'
 DEFAULT_DATE = None
 
 PATH = 'content'
-THEME = '/home/tohuw/projects/tohuwnet/themes/qalal'
+THEME = 'themes/qalal'
 # THEME = 'simple'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
