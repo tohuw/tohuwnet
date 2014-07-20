@@ -1,0 +1,13 @@
+# Ignore common temp and swap files
+*.swn
+*.swo
+*.swp
+.~*
+.#*
+
+## Ignore site-specific files...
+# Pelican
+cache
+output
+pelican-plugins
+themes
