@@ -64,8 +64,8 @@ SLUGIFY_SOURCE = 'title'
 RELATIVE_URLS = False
 
 # MENUITEMS = ( ('Archive','/archives.html'), ('Search', '/search.html') ,)
-DISPLAY_PAGES_ON_MENU = 'false'
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 
 SUMMARY_MAX_LENGTH = 50
 
