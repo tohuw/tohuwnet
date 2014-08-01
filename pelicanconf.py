@@ -29,7 +29,7 @@ WRITE_SELECTED = []
 # OUTPUT_RETENTION = ( ".git", )
 OUTPUT_SOURCES = False
 OUTPUT_SOURCES_EXTENSION = '.text'
-IGNORE_FILES = ['.*']
+IGNORE_FILES = ['.*', '*.cod']
 # LOG_FILTER = [(logging.WARN, 'Feeds generated without SITEURL set properly may not be valid')]
 
 CACHE_PATH = 'cache'
@@ -64,7 +64,7 @@ SLUGIFY_SOURCE = 'title'
 RELATIVE_URLS = False
 
 # MENUITEMS = ( ('Archive','/archives.html'), ('Search', '/search.html') ,)
-DISPLAY_PAGES_ON_MENU = 'false'
+DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 SUMMARY_MAX_LENGTH = 50
@@ -90,6 +90,7 @@ SLUG_SUBSTITUTIONS = [('and', '')]
 
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
+ALLARTICLES_TITLE = False
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
@@ -104,6 +105,7 @@ WITH_FUTURE_DATES = False
 PAGE_PATHS = ['pages']
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
+PAGE_SHOW_MODDATE = True
 
 CATEGORIES_SAVE_AS = 'topics.html'
 CATEGORY_URL = 'topic/{slug}.html'
