@@ -12,3 +12,5 @@ cache
 output
 pelican-plugins
 themes
+# Sublime Text
+*.sublime-*
