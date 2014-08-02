@@ -51,8 +51,8 @@ EXTRA_TEMPLATES_PATHS = []
 ARTICLE_EXCLUDES = ['extras']
 PAGE_EXCLUDES = ['extras']
 STATIC_PATHS = [
-    'extras',
-    'images',
+        'extras',
+        'images',
 ]
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 PATH_METADATA = ''
@@ -130,7 +130,7 @@ AUTHOR_SAVE_AS = ''
 
 ## Analytics
 #GOOGLE_ANALYTICS = 
-#GOSQUARED_SITENAME =  
+#GOSQUARED_SITENAME =    
 # PIWIK_URL = 'tohuw.net/stats'
 # PIWIK_SSL_URL = 'tohuw.net/stats'
 # PIWIK_SITE_ID = 1
@@ -139,13 +139,13 @@ LINKS = (('HighExecutive', 'http://highexecutive.net'),
          ('Uber Marianne', 'http://ubermarianne.net'),)
 
 SOCIAL = (('@Tohuw', 'https://twitter.com/tohuw'),
-         ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
+          ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
 #GITHUB_URL = 
 TWITTER_USERNAME = 'tohuw'
 
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 3
 # PAGINATION_PATTERNS = (
-#     (1, '{base_name}/', '{base_name}/index.html'),
-#     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+#         (1, '{base_name}/', '{base_name}/index.html'),
+#         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 # )
