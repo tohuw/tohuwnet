@@ -14,7 +14,6 @@ DEFAULT_DATE = None
 
 PATH = 'content'
 THEME = 'themes/qalal'
-# THEME = 'simple'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
 # PLUGIN_PATHS = ['pelican-plugins']
@@ -91,6 +90,8 @@ SLUG_SUBSTITUTIONS = [('and', '')]
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 ALLARTICLES_TITLE = False
+ARTICLE_SHOW_MODDATE = True
+ARTICLE_SHOW_SHARE = True
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
@@ -124,6 +125,7 @@ AUTHORS_SAVE_AS = ''
 AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
+## Comments
 #DISQUS_SITENAME = 
 
 ## Analytics
@@ -134,12 +136,12 @@ AUTHOR_SAVE_AS = ''
 # PIWIK_SITE_ID = 1
 
 LINKS = (('HighExecutive', 'http://highexecutive.net'),
-         ('Uber Marianne', 'http://ubermarianne.net'),
-         ('The Matt Walsh Blog', 'http://themattwalshblog.com/'))
+         ('Uber Marianne', 'http://ubermarianne.net'),)
 
-#GITHUB_URL = 
 SOCIAL = (('@Tohuw', 'https://twitter.com/tohuw'),
-          ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
+         ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
+#GITHUB_URL = 
+TWITTER_USERNAME = 'tohuw'
 
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 3
