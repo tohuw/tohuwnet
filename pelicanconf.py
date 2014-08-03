@@ -16,8 +16,8 @@ PATH = 'content'
 THEME = 'themes/qalal'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
-# PLUGIN_PATHS = ['pelican-plugins']
-# PLUGINS = ['tipue_search']
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['tipue_search']
 # MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
 # PYGMENTS_RST_OPTIONS = []
 TYPOGRIFY = True
@@ -44,7 +44,7 @@ AUTHOR = u'Ron Scott-Adams'
 SITESUBTITLE = 'tohuw {to’-hoo}: formlessness, confusion, unreality, emptiness; nothingness, place of chaos; vanity'
 # DEFAULT_METADATA = ()
 
-# DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
 # PAGINATED_DIRECT_TEMPLATES = ('index',)
 # TEMPLATE_PAGES = {'extras/search.html': 'search.html'}
 EXTRA_TEMPLATES_PATHS = []
@@ -135,8 +135,9 @@ LINKS = (('HighExecutive', 'http://highexecutive.net'),
          ('Uber Marianne', 'http://ubermarianne.net'),)
 
 SOCIAL = (('@Tohuw', 'https://twitter.com/tohuw'),
-          ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
-GITHUB_URL = "github.com/tohuw"
+          ('LinkedIn', 'https://linkedin.com/in/tohuw'),
+          ('GitHub', 'https://github.com/tohuw'))
+GITHUB_URL = "https://github.com/tohuw"
 
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 3
@@ -153,3 +154,4 @@ PAGE_SHOW_MODDATE = True
 TWITTER_USERNAME = 'tohuw'
 TWITTER_FEED = True
 CREDITS_SHOW = True
+TIPUE_SEARCH = 'tipue_search' in PLUGINS
