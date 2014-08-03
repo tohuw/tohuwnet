@@ -69,7 +69,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 SUMMARY_MAX_LENGTH = 50
 
 FEED_DOMAIN = SITEURL
-#FEED_MAX_ITEMS = 
+#FEED_MAX_ITEMS =
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ATOM = None
@@ -89,9 +89,6 @@ SLUG_SUBSTITUTIONS = [('and', '')]
 
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
-ALLARTICLES_TITLE = False
-ARTICLE_SHOW_MODDATE = True
-ARTICLE_SHOW_SHARE = True
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
@@ -106,7 +103,6 @@ WITH_FUTURE_DATES = False
 PAGE_PATHS = ['pages']
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
-PAGE_SHOW_MODDATE = True
 
 CATEGORIES_SAVE_AS = 'topics.html'
 CATEGORY_URL = 'topic/{slug}.html'
@@ -126,11 +122,11 @@ AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
 ## Comments
-#DISQUS_SITENAME = 
+#DISQUS_SITENAME =
 
 ## Analytics
-#GOOGLE_ANALYTICS = 
-#GOSQUARED_SITENAME =    
+#GOOGLE_ANALYTICS =
+#GOSQUARED_SITENAME =
 # PIWIK_URL = 'tohuw.net/stats'
 # PIWIK_SSL_URL = 'tohuw.net/stats'
 # PIWIK_SITE_ID = 1
@@ -140,8 +136,7 @@ LINKS = (('HighExecutive', 'http://highexecutive.net'),
 
 SOCIAL = (('@Tohuw', 'https://twitter.com/tohuw'),
           ('LinkedIn', 'https://linkedin.com/in/tohuw'),)
-#GITHUB_URL = 
-TWITTER_USERNAME = 'tohuw'
+GITHUB_URL = "github.com/tohuw"
 
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 3
@@ -149,3 +144,12 @@ DEFAULT_ORPHANS = 3
 #         (1, '{base_name}/', '{base_name}/index.html'),
 #         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 # )
+
+## Qalal-Specific Settings
+ALLARTICLES_TITLE = False
+ARTICLE_SHOW_MODDATE = True
+ARTICLE_SHOW_SHARE = True
+PAGE_SHOW_MODDATE = True
+TWITTER_USERNAME = 'tohuw'
+TWITTER_FEED = True
+CREDITS_SHOW = True
