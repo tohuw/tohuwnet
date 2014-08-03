@@ -122,7 +122,7 @@ AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
 ## Comments
-#DISQUS_SITENAME =
+DISQUS_SITENAME = 'tohuw'
 
 ## Analytics
 #GOOGLE_ANALYTICS =
@@ -155,3 +155,4 @@ TWITTER_USERNAME = 'tohuw'
 TWITTER_FEED = True
 CREDITS_SHOW = True
 TIPUE_SEARCH = 'tipue_search' in PLUGINS
+ISSO_ENABLED = False
