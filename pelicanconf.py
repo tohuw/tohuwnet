@@ -17,7 +17,7 @@ THEME = 'themes/qalal'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['tipue_search']
+PLUGINS = ['tipue_search', 'pelican_comment_system']
 # MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
 # PYGMENTS_RST_OPTIONS = []
 TYPOGRIFY = True
@@ -122,7 +122,7 @@ AUTHOR_URL = ''
 AUTHOR_SAVE_AS = ''
 
 ## Comments
-DISQUS_SITENAME = 'tohuw'
+# DISQUS_SITENAME = 'tohuw'
 
 ## Analytics
 #GOOGLE_ANALYTICS =
@@ -146,6 +146,16 @@ DEFAULT_ORPHANS = 3
 #         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 # )
 
+## Plugin-Specific Settings
+PELICAN_COMMENT_SYSTEM = True
+PELICAN_COMMENT_SYSTEM_DIR = 'comments'
+PELICAN_COMMENT_SYSTEM_IDENTICON_OUTPUT_PATH = 'images/identicon'
+PELICAN_COMMENT_SYSTEM_IDENTICON_DATA = ()
+PELICAN_COMMENT_SYSTEM_IDENTICON_SIZE = 36
+PELICAN_COMMENT_SYSTEM_AUTHORS = {}
+PELICAN_COMMENT_SYSTEM_FEED = 'feeds/comment.%s.atom.xml'
+COMMENT_URL = '#comment-{path}'
+
 ## Qalal-Specific Settings
 ALLARTICLES_TITLE = False
 ARTICLE_SHOW_MODDATE = True
@@ -154,5 +164,5 @@ PAGE_SHOW_MODDATE = True
 TWITTER_USERNAME = 'tohuw'
 TWITTER_FEED = True
 CREDITS_SHOW = True
-TIPUE_SEARCH = 'tipue_search' in PLUGINS
+TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = False
