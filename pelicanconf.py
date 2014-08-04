@@ -53,6 +53,7 @@ PAGE_EXCLUDES = ['extras']
 STATIC_PATHS = [
         'extras',
         'images',
+        'comments',
 ]
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 PATH_METADATA = ''
@@ -154,7 +155,7 @@ PELICAN_COMMENT_SYSTEM_IDENTICON_DATA = ()
 PELICAN_COMMENT_SYSTEM_IDENTICON_SIZE = 36
 PELICAN_COMMENT_SYSTEM_AUTHORS = {}
 PELICAN_COMMENT_SYSTEM_FEED = 'feeds/comment.%s.atom.xml'
-COMMENT_URL = '#comment-{path}'
+COMMENT_URL = '#comment-{slug}'
 
 ## Qalal-Specific Settings
 ALLARTICLES_TITLE = False
