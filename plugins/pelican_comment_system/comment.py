@@ -10,8 +10,6 @@ from pelican.utils import slugify
 
 from . import avatars
 
-import logging
-logger = logging.getLogger(__name__)
 
 class Comment(Content):
     mandatory_properties = ('author', 'date')
@@ -20,14 +18,13 @@ class Comment(Content):
     def __init__(self, content, metadata, settings, source_path, context):
         # Strip the path off the full filename.
         name = os.path.split(source_path)[1]
-        logger.debug('Comment filename: ' + name)
+
         if not hasattr(self, 'slug'):
             # compute the slug before initializing the base Content object, so
             # it doesn't get set there
             # This is required because we need a slug containing the file
             # extension.
             self.slug = slugify(name, settings.get('SLUG_SUBSTITUTIONS', ()))
-            logger.debug('Comment slug: ' + self.slug)
 
         super(Comment, self).__init__(content, metadata, settings, source_path,
                                       context)
@@ -36,7 +33,6 @@ class Comment(Content):
 
         # Strip the extension from the filename.
         name = os.path.splitext(name)[0]
-        logger.debug('Comment name: ' + name)
         self.avatar = avatars.getAvatarPath(name, metadata)
         self.title = "Posted by:  {}".format(metadata['author'])
 

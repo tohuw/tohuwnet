@@ -82,6 +82,7 @@ def getAvatarPath(comment_id, metadata):
 
     if author in _authors:
         return _authors[author]
+        logger.debug("Found author: " + _authors[author])
 
     global _missingAvatars
 
