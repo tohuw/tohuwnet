@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'http://tohuwnet.local'
+SITEURL = 'https://tohuw.net'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
