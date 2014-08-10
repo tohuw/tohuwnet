@@ -41,7 +41,7 @@ GZIP_CACHE = True
 
 TITLE = 'Tohuw.Net'
 AUTHOR = u'Ron Scott-Adams'
-SITESUBTITLE = 'tohuw {to’-hoo}: formlessness, confusion, unreality, emptiness; nothingness, place of chaos; vanity'
+SITESUBTITLE = '{to’-hoo}: formlessness, confusion, unreality; place of chaos; vanity'
 # DEFAULT_METADATA = ()
 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
