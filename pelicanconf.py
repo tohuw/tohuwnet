@@ -41,7 +41,7 @@ GZIP_CACHE = True
 
 TITLE = 'Tohuw.Net'
 AUTHOR = u'Ron Scott-Adams'
-SITESUBTITLE = '{to’-hoo}: formlessness, confusion, unreality; place of chaos; vanity'
+SITESUBTITLE = 'Elucidating Systems Architecture, Operations, & Yak Shaving'
 # DEFAULT_METADATA = ()
 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
