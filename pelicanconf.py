@@ -64,7 +64,7 @@ SLUGIFY_SOURCE = 'title'
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-MENUITEMS = ( ('Archives','/archives/'), ('Topics', '/topics.html') ,)
+MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/') ,)
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
