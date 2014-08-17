@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'https://tohuw.net'
+SITEURL = 'http://tohuwnet.local'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
@@ -41,7 +41,7 @@ GZIP_CACHE = True
 
 TITLE = 'Tohuw.Net'
 AUTHOR = u'Ron Scott-Adams'
-SITESUBTITLE = 'tohuw {to’-hoo}: formlessness, confusion, unreality, emptiness; nothingness, place of chaos; vanity'
+SITESUBTITLE = 'Elucidating Systems Architecture, Operations, & Yak Shaving'
 # DEFAULT_METADATA = ()
 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
@@ -64,7 +64,7 @@ SLUGIFY_SOURCE = 'title'
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-# MENUITEMS = ( ('Archive','/archives.html'), ('Search', '/search.html') ,)
+MENUITEMS = ( ('Archives','/archives/'), ('Topics', '/topics.html'), ('Tags', '/tags.html') ,)
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -133,15 +133,15 @@ AUTHOR_SAVE_AS = ''
 # PIWIK_SSL_URL = 'tohuw.net/stats'
 # PIWIK_SITE_ID = 1
 
-LINKS = (('HighExecutive', 'http://highexecutive.net'),
-         ('Uber Marianne', 'http://ubermarianne.net'),)
-
-SOCIAL = (('@Tohuw', 'https://twitter.com/tohuw'),
-          ('LinkedIn', 'https://linkedin.com/in/tohuw'),
-          ('GitHub', 'https://github.com/tohuw'))
 GITHUB_URL = "https://github.com/tohuw"
+LINKS = (('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)', 'http://highexecutive.net'),
+         ('<span class="links-name">UberMarianne</span> (On a quest to fear nothing but God)', 'http://ubermarianne.net'),)
 
-DEFAULT_PAGINATION = 10
+SOCIAL = (('<span class="fa-twitter"></span>', 'https://twitter.com/tohuw'),
+          ('<span class="fa-linkedin"></span>', 'https://linkedin.com/in/tohuw'),
+          ('<span class="fa-github"></span>', GITHUB_URL))
+
+DEFAULT_PAGINATION = False
 DEFAULT_ORPHANS = 3
 # PAGINATION_PATTERNS = (
 #         (1, '{base_name}/', '{base_name}/index.html'),
@@ -162,14 +162,18 @@ PELICAN_COMMENT_SYSTEM_FEED = 'feeds/comment.%s.atom.xml'
 COMMENT_URL = '#comment-{slug}'
 
 ## Qalal-Specific Settings
-ALLARTICLES_TITLE = False
+ARTICLES_RECENT_SHOW = True
+ARTICLES_RECENT_TITLE = 'More, Here'
 ARTICLE_SHOW_MODDATE = True
 ARTICLE_SHOW_SHARE = True
 PAGE_SHOW_MODDATE = True
+LINKS_TITLE = 'More, Elsewhere'
+SOCIAL_TITLE = False
+FEED_TITLE = '<span class="fa-rss"></span>'
 TWITTER_USERNAME = 'tohuw'
 TWITTER_FEED = True
 CREDITS_SHOW = True
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = True
-ISSO_DEFAULT_STYLE = True
-ISSO_AVATARS = True
+ISSO_DEFAULT_STYLE = False
+ISSO_AVATARS = False
