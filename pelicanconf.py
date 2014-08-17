@@ -89,8 +89,8 @@ TRANSLATION_FEED_RSS = None
 
 SLUG_SUBSTITUTIONS = [('and', '')]
 
-ARTICLE_URL = '{category}/{slug}'
-ARTICLE_SAVE_AS = '{category}/{slug}.html'
+ARTICLE_URL = 'articles/{slug}'
+ARTICLE_SAVE_AS = 'articles/{slug}.html'
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/index.html'
@@ -171,7 +171,6 @@ LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
 TWITTER_USERNAME = 'tohuw'
-TWITTER_FEED = True
 CREDITS_SHOW = True
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = True
