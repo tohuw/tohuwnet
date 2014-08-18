@@ -135,7 +135,8 @@ AUTHOR_SAVE_AS = ''
 
 GITHUB_URL = "https://github.com/tohuw"
 LINKS = (('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)', 'http://highexecutive.net'),
-         ('<span class="links-name">UberMarianne</span> (On a quest to fear nothing but God)', 'http://ubermarianne.net'),)
+         ('<span class="links-name">UberMarianne</span> (My sister-in-law introspects)', 'http://ubermarianne.net'),
+         ('<span class="links-name">Dadhacker</span> (An old and new school cantankerous coder)', 'http://dadhacker.com'))
 
 SOCIAL = (('<span class="fa-twitter"></span>', 'https://twitter.com/tohuw'),
           ('<span class="fa-linkedin"></span>', 'https://linkedin.com/in/tohuw'),
@@ -165,7 +166,8 @@ COMMENT_URL = '#comment-{slug}'
 ARTICLES_RECENT_SHOW = True
 ARTICLES_RECENT_TITLE = 'More, Here'
 ARTICLE_SHOW_MODDATE = True
-ARTICLE_SHOW_SHARE = True
+ARTICLE_SHOW_TAGS = True
+ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_MODDATE = True
 LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False

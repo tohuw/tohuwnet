@@ -1,15 +1,19 @@
 Title: Markdown Test
 Slug: markdown-test
 Date: 2014-08-17 18:47:05
-Tags: tohuwnet
-Category: Dev
+Modified: 08/17/2014 11:21 PM
+Tags: tohuwnet, test
+Category: test
+Image: /images/avatars/me-at-creek.jpg
 Summary: It's time to play with Markdown, and wonder if MultiMarkdown is supported! 
 
 ## A simple Pelican theme, built for customization
 
-Qalal *(kaw-lal')* is a [Jinja2](http://jinja.pocoo.org>) template for the static site generator [Pelican](http://blog.getpelican.com>). It was originally forked from the "[simple](https://github.com/getpelican/pelican/tree/master/pelican/themes/simple>)" theme included with Pelican.
+Qalal *(kaw-lal')* is a [Jinja2](http://jinja.pocoo.org>) template for the static site generator [Pelican](http://blog.getpelican.com>). It was originally forked from the "[simple](https://github.com/getpelican/pelican/tree/master/pelican/themes/simple)" theme included with Pelican.
 
+<div class="warning" markdown="1">
 **Warning:** This theme[^testfootnote] is currently in heavy development. Usability ranges from "ugly" to "uh-oh". In the meantime, it may serve as a useful resource for those building themes or looking to add support for their favorite plugins.
+</div>
 
 I created this because I wanted a simple, unencumbered theme not requiring weighty libraries where I didn't view them as necessary. JQuery is currently required for a few plugins, and I may use it myself as well, but I don't plan to add much more than that (if anything). It will certainly evolve over time, and I have many plans for furthering it. For now, here it is, in all its naked un-glory. Suggestions and comments are always welcome. Feel free to fork and use it under the included license.
 
@@ -33,7 +37,9 @@ I created this because I wanted a simple, unencumbered theme not requiring weigh
 -   **Web fonts are included.**  
     Rather than relying on e.g. [Google Fonts](http://www.google.com/fonts) for web fonts support, fonts are included via the CSS2-native @font-face directive. Currently included are selections from [MavenPro](http://vissol.co.uk/mavenpro/) and [FontAwesome](http://fontawesome.io) both freely licensed fonts (under [SIL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)).
 
-    *Note:* FontAwesome styles are deliberately limited, but of course the standard CSS available in the download package could be re-introduced, or the existing CSS could be expanded to include more glyph styles.
+    <div class="info" markdown="1"><p>
+    **Note:** FontAwesome styles are deliberately limited, but of course the standard CSS available in the download package could be re-introduced, or the existing CSS could be expanded to include more glyph styles.
+    </p></div>
 
 ## Settings
 
@@ -98,3 +104,5 @@ DISQUS_SITENAME
 :    Set to the name of your site registered on [Disqus](http://disqus.com) to enable and configure Disqus support.
 
 [^testfootnote]: Just testing!
+
+*[CSS]: Cascading Style Sheets
