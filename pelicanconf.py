@@ -6,8 +6,8 @@ SITEURL = 'http://tohuwnet.local'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
-# LOCALE = ( 'en_US', )
-# DEFAULT_DATE_FORMAT = '%a %d %B %Y'
+LOCALE = ( 'en_US', )
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
 # DATE_FORMATS = { 'en': '%a, %d %b %Y', }
 TIMEZONE = 'America/New_York'
 DEFAULT_DATE = None
@@ -44,7 +44,7 @@ AUTHOR = u'Ron Scott-Adams'
 SITESUBTITLE = 'Elucidating Systems Architecture, Operations, & Yak Shaving'
 # DEFAULT_METADATA = ()
 
-DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'search'))
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'authors', 'search'))
 # PAGINATED_DIRECT_TEMPLATES = ('index',)
 # TEMPLATE_PAGES = {'extras/search.html': 'search.html'}
 EXTRA_TEMPLATES_PATHS = []
@@ -119,9 +119,9 @@ TAG_SAVE_AS = 'tag/{slug}.html'
 TAG_CLOUD_STEPS = 5
 TAG_CLOUD_MAX_ITEMS = 100
 
-AUTHORS_SAVE_AS = ''
-AUTHOR_URL = ''
-AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = 'authors.html'
+AUTHOR_URL = 'author/{slug}.html'
+AUTHOR_SAVE_AS = 'author/{slug}.html'
 
 ## Comments
 # DISQUS_SITENAME = 'tohuw'
@@ -163,17 +163,20 @@ PELICAN_COMMENT_SYSTEM_FEED = 'feeds/comment.%s.atom.xml'
 COMMENT_URL = '#comment-{slug}'
 
 ## Qalal-Specific Settings
-ARTICLES_RECENT_SHOW = True
 ARTICLES_RECENT_TITLE = 'More, Here'
-ARTICLE_SHOW_MODDATE = True
+ARTICLES_SHOW_RECENT = True
+ARTICLE_SHOW_DATE = True
+ARTICLE_SHOW_EDITINFO = True
+ARTICLE_SHOW_AUTHORS = True
+ARTICLE_SHOW_CATEGORY = True
 ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
-PAGE_SHOW_MODDATE = True
+PAGE_SHOW_EDITINFO = True
+CUSTOM_AUTHOR_URL = 'ron-scott-adams.html'
 LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
 TWITTER_USERNAME = 'tohuw'
-CREDITS_SHOW = True
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = True
 ISSO_DEFAULT_STYLE = False
