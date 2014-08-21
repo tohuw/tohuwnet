@@ -1,3 +1,13 @@
+For the purposes of licensing, the files within this project is divided into two categories:
+
+- "Content", referring to all Markdown-formatted files, images, and audio
+  This data is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which is provided in full at http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode or by writing Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA
+
+  In addition, content may be licensed under one or more commercial or more flexible licenses upon request. Details on how to request such licensure may be found at https://tohuw.net/rights or by contacting Ron Scott-Adams via email at ron {at} tohuw.net.
+
+- "Code", including everything else within this project.
+  This data is licensed under the Apache License 2.0, which is included below.
+
 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
