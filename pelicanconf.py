@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'http://tohuwnet.local'
+SITEURL = 'https://Tohuw.Net'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
-LOCALE = ( 'en_US', )
+LOCALE = ( 'en_US.utf8', )
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
 # DATE_FORMATS = { 'en': '%a, %d %b %Y', }
 TIMEZONE = 'America/New_York'
@@ -64,8 +64,8 @@ SLUGIFY_SOURCE = 'title'
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/') ,)
-DISPLAY_PAGES_ON_MENU = True
+MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams.html') ,)
+DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
 SUMMARY_MAX_LENGTH = 50
@@ -129,9 +129,9 @@ AUTHOR_SAVE_AS = 'author/{slug}.html'
 ## Analytics
 #GOOGLE_ANALYTICS =
 #GOSQUARED_SITENAME =
-# PIWIK_URL = 'tohuw.net/stats'
-# PIWIK_SSL_URL = 'tohuw.net/stats'
-# PIWIK_SITE_ID = 1
+PIWIK_URL = 'tohuw.net/stats'
+PIWIK_SSL_URL = 'tohuw.net/stats'
+PIWIK_SITE_ID = 1
 
 GITHUB_URL = "https://github.com/tohuw"
 LINKS = (('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)', 'http://highexecutive.net'),
