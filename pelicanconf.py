@@ -64,8 +64,8 @@ SLUGIFY_SOURCE = 'title'
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/') ,)
-DISPLAY_PAGES_ON_MENU = True
+MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams.html') ,)
+DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
 SUMMARY_MAX_LENGTH = 50
