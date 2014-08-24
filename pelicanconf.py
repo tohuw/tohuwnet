@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'http://tohuwnet.local'
+SITEURL = 'https://tohuw.net'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
-LOCALE = ( 'en_US', )
+LOCALE = ( 'en_US.utf8', )
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
 # DATE_FORMATS = { 'en': '%a, %d %b %Y', }
 TIMEZONE = 'America/New_York'
