@@ -1,11 +1,11 @@
 Title: Fix Garbage Output from esxtop (and learn something along the way)
 Slug: fix-garbage-output-from-esxtop
-Date: 2014-08-28 19:45:48
-Tags: esxi, cli, os x
+Date: 2014-08-28 23:48:39
+Tags: vmware, esxi, cli, os x
 Category: virtualization
 Image: /images/osx-set-term.png
 Summary: If esxtop looks like a stream of nonsense when you run it, check your emulation mode, then understand what emulation mode is to feel clever the next time this happens.
-Status: Draft
+Status: Published
 
 I noticed when I accessed my ESXi hosts from my Mac and ran [esxtop](http://www.yellow-bricks.com/esxtop/), the output was a stream of seeming garbage like:
 
