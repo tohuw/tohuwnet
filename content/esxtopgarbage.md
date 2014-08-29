@@ -34,6 +34,7 @@ Changing the emulation mode client-side is a simple one-off way to fix it, but t
 ```bash
 echo "TERM=xterm >> ~/.profile"
 ```
+
 <aside markdown="1">
 > I hope this more lengthy exploration of a one-line fix serves as a reminder that searching out and understanding the underlying problem goes a long way toward most correctly solving it.
 
