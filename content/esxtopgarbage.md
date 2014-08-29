@@ -7,7 +7,7 @@ Image: /images/osx-set-term.png
 Summary: If esxtop looks like a stream of nonsense when you run it, check your emulation mode, then understand what emulation mode is to feel clever the next time this happens.
 Status: Draft
 
-I noticed when I accessed my ESXi hosts from my Mac and ran `esxtop`, the output was a stream of seeming garbage like:
+I noticed when I accessed my ESXi hosts from my Mac and ran [esxtop](http://www.yellow-bricks.com/esxtop/), the output was a stream of seeming garbage like:
 
 ```bash
 ~ # esxtop
