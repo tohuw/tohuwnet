@@ -25,9 +25,7 @@ It's done this way because it works, and keeps there's not much necessity to cha
 
 ![OS X Terminal Preferences Window](/images/osx-set-term.png)
 
-<aside markdown="1">
 It's worth mentioning that setting this does not mean you will not be able to display colors in the terminal - it's rather more complicated than that. Essentially, setting the mode *explicitly* declares the kind of color made the terminal can support. There are other ways color support is detected, but many systems and utilities have other ways of detecting or forcing the display mode.
-</aside>
 
 Changing the emulation mode client-side is a simple one-off way to fix it, but this isn't the best solution. As Mathias Ewald correctly points out in his [article on fixing esxtop output](http://www.vxpertise.net/2012/12/esxi-shell-fixing-esxtop-output-via-ssh/), a better approach is to change how the ESXi host perceives your terminal session. You can, as Mathias suggests, simply execute `TERM=xterm esxtop`, which will force the emulation mode for just that run. He also correctly mentions you could also set the [environment variable](https://wiki.archlinux.org/index.php/Environment_Variables) TERM, which decides what terminal mode your session will use: `export TERM=xterm`. There's another, more permanent solution: set the option in .profile, a file in your home directory which is really just a logon script:
 
