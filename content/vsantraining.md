@@ -1,6 +1,6 @@
 Title: Reflections on VSAN Training
 Slug: reflections-on-vsan-training
-Date: 2014-08-23 22:46:34
+Date: 2014-08-24 00:36:06
 Tags: vsan, vmware, reviews
 Category: virtualization
 Image: /images/avatars/me-at-creek.jpg
