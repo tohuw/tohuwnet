@@ -73,9 +73,9 @@ SUMMARY_MAX_LENGTH = 50
 FEED_DOMAIN = SITEURL
 #FEED_MAX_ITEMS =
 
-FEED_ALL_ATOM = '/feeds/all.atom.xml'
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ATOM = None
-CATEGORY_FEED_ATOM = '/feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TAG_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
