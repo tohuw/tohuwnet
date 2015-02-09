@@ -11,14 +11,8 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'https://tohuw.net'
-RELATIVE_URLS = False
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
+LOCALE = ( 'en_US.utf8', )
 DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+PIWIK_URL = 'tohuw.net/stats'
+PIWIK_SSL_URL = 'tohuw.net/stats'
+PIWIK_SITE_ID = 1
