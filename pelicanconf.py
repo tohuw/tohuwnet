@@ -28,7 +28,7 @@ WRITE_SELECTED = []
 # OUTPUT_RETENTION = ( ".git", )
 OUTPUT_SOURCES = False
 OUTPUT_SOURCES_EXTENSION = '.text'
-IGNORE_FILES = ['.*', '*.cod']
+IGNORE_FILES = ['.*']
 # LOG_FILTER = [(logging.WARN, 'Feeds generated without SITEURL set properly may not be valid')]
 
 CACHE_PATH = 'cache'
@@ -129,9 +129,9 @@ AUTHOR_SAVE_AS = 'author/{slug}.html'
 ## Analytics
 #GOOGLE_ANALYTICS =
 #GOSQUARED_SITENAME =
-# PIWIK_URL = 'tohuw.net/stats'
-# PIWIK_SSL_URL = 'tohuw.net/stats'
-# PIWIK_SITE_ID = 1
+# PIWIK_URL =
+# PIWIK_SSL_URL =
+# PIWIK_SITE_ID =
 
 GITHUB_URL = "https://github.com/tohuw"
 LINKS = (('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)', 'http://highexecutive.net'),
