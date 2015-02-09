@@ -2,22 +2,15 @@ from fabric.api import *
 import fabric.contrib.project as project
 import os
 import sys
-import SimpleHTTPServer
-import SocketServer
 
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
+env.listen_port = 8000
 
 # Remote server configuration
 production = 'tohuw@tohuw.net:22'
 dest_path = '/srv/www/tohuwnet'
-
-# Rackspace Cloud Files configuration settings
-env.cloudfiles_username = 'my_rackspace_username'
-env.cloudfiles_api_key = 'my_rackspace_api_key'
-env.cloudfiles_container = 'my_cloudfiles_container'
-
 
 def clean():
     if os.path.isdir(DEPLOY_PATH):
@@ -34,17 +27,20 @@ def rebuild():
 def regenerate():
     local('pelican -r -s pelicanconf.py')
 
+# def serve():
+#     os.chdir(env.deploy_path)
+
+#     PORT = 8000
+#     class AddressReuseTCPServer(SocketServer.TCPServer):
+#         allow_reuse_address = True
+
+#     server = AddressReuseTCPServer(('', PORT), SimpleHTTPServer.SimpleHTTPRequestHandler)
+
+#     sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
+#     server.serve_forever()
+
 def serve():
-    os.chdir(env.deploy_path)
-
-    PORT = 8000
-    class AddressReuseTCPServer(SocketServer.TCPServer):
-        allow_reuse_address = True
-
-    server = AddressReuseTCPServer(('', PORT), SimpleHTTPServer.SimpleHTTPRequestHandler)
-
-    sys.stderr.write('Serving on port {0} ...\n'.format(PORT))
-    server.serve_forever()
+    local('cd {deploy_path} && python ../fake_server.py {listen_port}'.format(**env))
 
 def reserve():
     build()
