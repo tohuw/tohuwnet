@@ -129,9 +129,9 @@ AUTHOR_SAVE_AS = 'author/{slug}.html'
 ## Analytics
 #GOOGLE_ANALYTICS =
 #GOSQUARED_SITENAME =
-PIWIK_URL = 'tohuw.net/stats'
-PIWIK_SSL_URL = 'tohuw.net/stats'
-PIWIK_SITE_ID = 1
+# PIWIK_URL = 'tohuw.net/stats'
+# PIWIK_SSL_URL = 'tohuw.net/stats'
+# PIWIK_SITE_ID = 1
 
 GITHUB_URL = "https://github.com/tohuw"
 LINKS = (('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)', 'http://highexecutive.net'),
@@ -148,19 +148,6 @@ DEFAULT_ORPHANS = 3
 #         (1, '{base_name}/', '{base_name}/index.html'),
 #         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 # )
-
-## Plugin-Specific Settings
-PELICAN_COMMENT_SYSTEM = False
-PELICAN_COMMENT_SYSTEM_DIR = 'comments'
-PELICAN_COMMENT_SYSTEM_IDENTICON_OUTPUT_PATH = 'images/avatars'
-PELICAN_COMMENT_SYSTEM_IDENTICON_DATA = {'author'}
-PELICAN_COMMENT_SYSTEM_IDENTICON_SIZE = 54
-PELICAN_COMMENT_SYSTEM_AUTHORS = {
-    ('Ron'): "images/avatars/me-at-creek.png",
-    ('Tom'): "images/authors/tom.png",
-}
-PELICAN_COMMENT_SYSTEM_FEED = 'feeds/comment.%s.atom.xml'
-COMMENT_URL = '#comment-{slug}'
 
 ## Qalal-Specific Settings
 ARTICLES_RECENT_TITLE = 'More, Here'
