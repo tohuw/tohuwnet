@@ -10,8 +10,6 @@
 # Pelican
 cache
 output
-pelican-plugins
-themes
 # Isso
 isso-comments.db
 # Sublime Text
