@@ -16,3 +16,4 @@ DELETE_OUTPUT_DIRECTORY = True
 PIWIK_URL = 'tohuw.net/stats'
 PIWIK_SSL_URL = 'tohuw.net/stats'
 PIWIK_SITE_ID = 1
+ISSO_URL = '{SITEURL}/comments'

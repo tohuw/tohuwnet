@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-SITEURL = 'http://tohuwnet.local'
+SITEURL = 'http://localhost:8000'
 SITENAME = u'Tohuw.Net'
 
 DEFAULT_LANG = u'en'
@@ -166,5 +166,14 @@ FEED_TITLE = '<span class="fa-rss"></span>'
 TWITTER_USERNAME = 'tohuw'
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = True
+ISSO_URL = 'localhost:8001'
+# ISSO_LANG =
 ISSO_DEFAULT_STYLE = False
-ISSO_AVATARS = False
+ISSO_REPLY_TO_SELF = True
+ISSO_MAX_COMMENTS_TOP = 'inf'
+ISSO_MAX_COMMENTS_NESTED = 'inf'
+ISSO_REVEAL_ON_CLICK = 'inf'
+ISSO_AVATARS = True
+# ISSO_AVATAR_BG =
+# ISSO_AVATAR_FG =
+ISSO_VOTING = True
