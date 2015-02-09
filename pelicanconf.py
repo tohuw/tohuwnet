@@ -17,7 +17,7 @@ THEME = 'themes/qalal'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['tipue_search', 'pelican_comment_system']
+PLUGINS = ['tipue_search']
 # MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
 # PYGMENTS_RST_OPTIONS = []
 TYPOGRIFY = True
@@ -46,7 +46,7 @@ SITESUBTITLE = 'Elucidating Systems Architecture, Operations, & Yak Shaving'
 
 DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'authors', 'search'))
 # PAGINATED_DIRECT_TEMPLATES = ('index',)
-# TEMPLATE_PAGES = {'extras/search.html': 'search.html'}
+# TEMPLATE_PAGES = {'extras/search.html': 'search'}
 EXTRA_TEMPLATES_PATHS = []
 ARTICLE_EXCLUDES = ['extras']
 PAGE_EXCLUDES = ['extras']
@@ -64,7 +64,7 @@ SLUGIFY_SOURCE = 'title'
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-MENUITEMS = ( ('Topics', '/topics.html'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams.html') ,)
+MENUITEMS = ( ('Topics', '/topics/'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams') ,)
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -73,9 +73,9 @@ SUMMARY_MAX_LENGTH = 50
 FEED_DOMAIN = SITEURL
 #FEED_MAX_ITEMS =
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = '/feeds/all.atom.xml'
 FEED_ATOM = None
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = '/feeds/%s.atom.xml'
 TAG_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -89,7 +89,7 @@ TRANSLATION_FEED_RSS = None
 
 SLUG_SUBSTITUTIONS = [('and', '')]
 
-ARTICLE_URL = 'articles/{slug}'
+ARTICLE_URL = '/articles/{slug}'
 ARTICLE_SAVE_AS = 'articles/{slug}.html'
 
 ARCHIVES_SAVE_AS = 'archives/index.html'
@@ -98,30 +98,30 @@ MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%b}/index.html'
 DAY_ARCHIVE_SAVE_AS = ''
 NEWEST_FIRST_ARCHIVES = True
 
-DRAFT_URL = 'drafts/{slug}.html'
+DRAFT_URL = '/drafts/{slug}'
 DRAFT_SAVE_AS = 'drafts/{slug}.html'
 WITH_FUTURE_DATES = False
 
 PAGE_PATHS = ['pages']
-PAGE_URL = '{slug}.html'
+PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
 
-CATEGORIES_SAVE_AS = 'topics.html'
-CATEGORY_URL = 'topic/{slug}.html'
-CATEGORY_SAVE_AS = 'topic/{slug}.html'
+CATEGORIES_SAVE_AS = 'topics/index.html'
+CATEGORY_URL = '/topics/{slug}'
+CATEGORY_SAVE_AS = 'topics/{slug}.html'
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'misc'
 REVERSE_CATEGORY_ORDER = False
 
-TAGS_SAVE_AS = 'tags.html'
-TAG_URL = 'tag/{slug}.html'
-TAG_SAVE_AS = 'tag/{slug}.html'
+TAGS_SAVE_AS = 'tags/index.html'
+TAG_URL = '/tags/{slug}'
+TAG_SAVE_AS = 'tags/{slug}.html'
 TAG_CLOUD_STEPS = 5
 TAG_CLOUD_MAX_ITEMS = 100
 
 AUTHORS_SAVE_AS = 'authors.html'
-AUTHOR_URL = 'author/{slug}.html'
-AUTHOR_SAVE_AS = 'author/{slug}.html'
+AUTHOR_URL = '/author/{slug}'
+AUTHOR_SAVE_AS = '/author/{slug}.html'
 
 ## Comments
 # DISQUS_SITENAME = 'tohuw'
@@ -145,8 +145,8 @@ SOCIAL = (('<span class="fa-twitter"></span>', 'https://twitter.com/tohuw'),
 DEFAULT_PAGINATION = False
 DEFAULT_ORPHANS = 3
 # PAGINATION_PATTERNS = (
-#         (1, '{base_name}/', '{base_name}/index.html'),
-#         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+#         (1, '{base_name}/', '{base_name}/index'),
+#         (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index'),
 # )
 
 ## Qalal-Specific Settings
@@ -159,7 +159,7 @@ ARTICLE_SHOW_CATEGORY = True
 ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_EDITINFO = True
-CUSTOM_AUTHOR_URL = 'ron-scott-adams.html'
+CUSTOM_AUTHOR_URL = '/ron-scott-adams'
 LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
