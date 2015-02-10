@@ -3,7 +3,8 @@ Slug: reflections-on-vsan-training
 Date: 2014-08-24 00:36:06
 Tags: vsan, vmware, reviews
 Category: virtualization
-Image: /images/avatars/me-at-creek.jpg
+Image: /images/vsan.png
+Thumb: /images/vsan_thumb.png
 Summary: VMware can teach their own product, and well.
 Status: published
 

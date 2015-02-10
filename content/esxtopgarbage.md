@@ -4,6 +4,7 @@ Date: 2014-08-28 23:48:39
 Tags: vmware, esxi, cli, os x
 Category: virtualization
 Image: /images/osx-set-term.png
+Thumb: /images/osx-set-term_thumb.png
 Summary: If esxtop looks like a stream of nonsense when you run it, check your emulation mode, then understand what emulation mode is to feel clever the next time this happens.
 Status: Published
 
