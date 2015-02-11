@@ -16,8 +16,12 @@ PATH = 'content'
 THEME = 'themes/qalal'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {}
+THEME_STATIC_DIR = ''
+THEME_STATIC_PATHS = ['static']
+CSS_FILE = 'main.css'
+
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['tipue_search']
+PLUGINS = ['tipue_search', 'better_figures_and_images']
 # MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra']
 # PYGMENTS_RST_OPTIONS = []
 TYPOGRIFY = True
@@ -52,9 +56,8 @@ ARTICLE_EXCLUDES = ['extras']
 PAGE_EXCLUDES = ['extras']
 STATIC_PATHS = [
         'extras',
-        'images',
-        'comments',
-        'cgi-bin'
+        'content/images',
+        'comments'
 ]
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 PATH_METADATA = ''
@@ -177,3 +180,4 @@ ISSO_AVATARS = True
 # ISSO_AVATAR_BG =
 # ISSO_AVATAR_FG =
 ISSO_VOTING = True
+RESPONSIVE_IMAGES = True
