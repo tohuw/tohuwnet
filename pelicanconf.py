@@ -36,8 +36,8 @@ IGNORE_FILES = ['.*']
 # LOG_FILTER = [(logging.WARN, 'Feeds generated without SITEURL set properly may not be valid')]
 
 CACHE_PATH = 'cache'
-CACHE_CONTENT = False
-LOAD_CONTENT_CACHE = True
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = False
 AUTORELOAD_IGNORE_CACHE = True
 CHECK_MODIFIED_METHOD = 'md5'
 CONTENT_CACHING_LAYER = 'reader'
@@ -54,20 +54,16 @@ DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'archives', 'authors', 'sear
 EXTRA_TEMPLATES_PATHS = []
 ARTICLE_EXCLUDES = ['extras']
 PAGE_EXCLUDES = ['extras']
-STATIC_PATHS = [
-        'extras',
-        'content/images',
-        'comments'
-]
+STATIC_PATHS = ['extras', 'images', 'comments']
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 PATH_METADATA = ''
-EXTRA_PATH_METADATA = { 'extras/robots.txt': {'path': 'robots.txt'}, }
+EXTRA_PATH_METADATA = {'extras/robots.txt': {'path': 'robots.txt'},}
 SLUGIFY_SOURCE = 'title'
 
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 RELATIVE_URLS = False
 
-MENUITEMS = ( ('Topics', '/topics/'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams') ,)
+MENUITEMS = (('Topics', '/topics/'), ('Archives','/archives/'), ('Ron Scott-Adams', '/ron-scott-adams'),)
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -167,6 +163,7 @@ LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
 TWITTER_USERNAME = 'tohuw'
+RESPONSIVE_IMAGES = True
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
 ISSO_ENABLED = True
 ISSO_URL = 'localhost:8001'
@@ -180,4 +177,3 @@ ISSO_AVATARS = True
 # ISSO_AVATAR_BG =
 # ISSO_AVATAR_FG =
 ISSO_VOTING = True
-RESPONSIVE_IMAGES = True

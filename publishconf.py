@@ -9,7 +9,7 @@ from pelicanconf import *
 SITEURL = 'https://tohuw.net'
 LOCALE = ( 'en_US.utf8', )
 DELETE_OUTPUT_DIRECTORY = True
-CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
 PIWIK_URL = 'tohuw.net/stats'
 PIWIK_SSL_URL = 'tohuw.net/stats'
 PIWIK_SITE_ID = 1

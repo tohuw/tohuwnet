@@ -24,7 +24,7 @@ The key is in the first line: `no termcap entry for a 'xterm-256color' terminal`
 
 It's done this way because it works, and keeps there's not much necessity to change how this output should work. Having a standard is helpful, because it's actually quite a bit of work to map GUIs to console output, and there's many rather old CLI programs which need to keep portable to newer systems, and still display just fine. However, OS X has chosen the less-common profile xterm-256color, which simply isn't set in the termcap configuration esxtop uses. The quickest solution is to change the terminal emulation mode your terminal uses ("xterm" is a generally good choice). To change this in OS X, select **Preferences** from the **Terminal** menu. Then, select the profile you want to change on the left side of the window (the current profile you're using will already be selected). Finally, select **xterm** from the **Declare terminal as** dropdown menu.
 
-![OS X Terminal Preferences Window](/images/osx-set-term.png)
+![OS X Terminal Preferences Window]({filename}/images/osx-set-term.png)
 
 It's worth mentioning that setting this does not mean you will not be able to display colors in the terminal - it's rather more complicated than that. Essentially, setting the mode *explicitly* declares the kind of color made the terminal can support. There are other ways color support is detected, but many systems and utilities have other ways of detecting or forcing the display mode.
 
