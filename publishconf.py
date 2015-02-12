@@ -8,8 +8,8 @@ from pelicanconf import *
 
 SITEURL = 'https://tohuw.net'
 LOCALE = ( 'en_US.utf8', )
-DELETE_OUTPUT_DIRECTORY = True
 LOAD_CONTENT_CACHE = True
+DELETE_OUTPUT_DIRECTORY = False
 PIWIK_URL = 'tohuw.net/stats'
 PIWIK_SSL_URL = 'tohuw.net/stats'
 PIWIK_SITE_ID = 1
