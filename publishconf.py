@@ -7,7 +7,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'https://tohuw.net'
-LOCALE = ( 'en_US.utf8', )
+LOCALE = ('en_US.utf8',)
 LOAD_CONTENT_CACHE = True
 DELETE_OUTPUT_DIRECTORY = False
 PIWIK_URL = 'tohuw.net/stats'

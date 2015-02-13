@@ -3,19 +3,19 @@
 from __future__ import unicode_literals
 
 ########################################################################
-## Site
+# Site
 SITEURL = 'http://localhost:8000'
 SITENAME = u'Tohuw.Net'
 TITLE = 'Tohuw.Net'
 AUTHOR = u'Ron Scott-Adams'
 SITESUBTITLE = 'Elucidating Systems Architecture, Operations, & Yak Shaving'
 ########################################################################
-## Logging
+# Logging
 # LOG_FILTER = [
 #       (logging.WARN, 'Feeds generated without SITEURL set properly may not be valid')
 # ]
 ########################################################################
-## Caching
+# Caching
 CACHE_PATH = 'cache'
 CACHE_CONTENT = True
 LOAD_CONTENT_CACHE = False
@@ -24,21 +24,21 @@ CHECK_MODIFIED_METHOD = 'md5'
 CONTENT_CACHING_LAYER = 'reader'
 GZIP_CACHE = True
 ########################################################################
-## Locale
+# Locale
 DEFAULT_LANG = u'en'
-LOCALE = ('en_US',)
+LOCALE = ('en_US', )
 DEFAULT_DATE_FORMAT = '%B %d, %Y'
 # DATE_FORMATS = {'en': '%a, %d %b %Y',}
 TIMEZONE = 'America/New_York'
 DEFAULT_DATE = None
 ########################################################################
-## Linkification
+# Linkification
 RELATIVE_URLS = False
 # INTRASITE_LINK_REGEX = '[{|](?P<what>.*?)[|}]'
 SLUGIFY_SOURCE = 'title'
 SLUG_SUBSTITUTIONS = [('and', '')]
 ########################################################################
-## Paths
+# Paths
 PATH = 'content'
 # OUTPUT_PATH = 'output/'
 DELETE_OUTPUT_DIRECTORY = False
@@ -103,7 +103,7 @@ AUTHORS_SAVE_AS = 'authors.html'
 AUTHOR_URL = '/author/{slug}'
 AUTHOR_SAVE_AS = '/author/{slug}.html'
 ########################################################################
-## Metadata
+# Metadata
 # DEFAULT_METADATA = ()
 # FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
 # PATH_METADATA = ''
@@ -118,21 +118,21 @@ EXTRA_PATH_METADATA = {
 }
 SUMMARY_MAX_LENGTH = 50
 ########################################################################
-## Theme
+# Theme
 THEME = 'themes/qalal'
 # JINJA_EXTENSIONS = []
 # JINJA_FILTERS = {'urlencode': urlencode_filter}
 THEME_STATIC_DIR = ''
-THEME_STATIC_PATHS = [ 'static' ]
+THEME_STATIC_PATHS = ['static']
 CSS_FILE = 'main.css'
-DIRECT_TEMPLATES = ((
+DIRECT_TEMPLATES = (
     'index',
     'tags',
     'categories',
     'archives',
     'authors',
     'search'
-))
+)
 # TEMPLATE_PAGES = {
 #     'src/books.html': 'dest/books.html',
 #     'src/resume.html': 'dest/resume.html',
@@ -140,33 +140,34 @@ DIRECT_TEMPLATES = ((
 # }
 # EXTRA_TEMPLATES_PATHS = []
 ########################################################################
-## Menu
+# Menu
 MENUITEMS = (
     ('Topics', '/topics/'),
-    ('Archives','/archives/'),
+    ('Archives', '/archives/'),
     ('Ron Scott-Adams', '/ron-scott-adams'),
 )
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 ########################################################################
-## Links
+# Links
 LINKS = (
     ('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)',
-        'http://highexecutive.net'),
+     'http://highexecutive.net'),
     ('<span class="links-name">UberMarianne</span> (My sister-in-law introspects)',
-        'http://ubermarianne.net'),
+     'http://ubermarianne.net'),
     ('<span class="links-name">Dadhacker</span> (An old and new school cantankerous coder)',
-        'http://dadhacker.com')
+     'http://dadhacker.com')
 )
 TWITTER_USERNAME = 'tohuw'
 GITHUB_URL = "https://github.com/tohuw"
 SOCIAL = (
-    ('<span class="fa-twitter"></span>', 'https://twitter.com/' + TWITTER_USERNAME),
+    ('<span class="fa-twitter"></span>',
+     'https://twitter.com/' + TWITTER_USERNAME),
     ('<span class="fa-linkedin"></span>', 'https://linkedin.com/in/tohuw'),
     ('<span class="fa-github"></span>', GITHUB_URL)
 )
 ########################################################################
-## Pagination
+# Pagination
 DEFAULT_PAGINATION = False
 # PAGINATED_DIRECT_TEMPLATES = ( 'index', )
 # DEFAULT_ORPHANS = 3
@@ -175,9 +176,9 @@ DEFAULT_PAGINATION = False
 #     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index'),
 # )
 ########################################################################
-## Feeds
+# Feeds
 FEED_DOMAIN = SITEURL
-#FEED_MAX_ITEMS =
+# FEED_MAX_ITEMS =
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ATOM = None
@@ -193,7 +194,7 @@ TAG_FEED_RSS = None
 AUTHOR_FEED_RSS = None
 TRANSLATION_FEED_RSS = None
 ########################################################################
-## Plugins/Extensions
+# Plugins/Extensions
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'tipue_search',
@@ -210,7 +211,7 @@ MD_EXTENSIONS = [
 # PYGMENTS_RST_OPTIONS = []
 RESPONSIVE_IMAGES = True
 ########################################################################
-## Comments
+# Comments
 # DISQUS_SITENAME = 'tohuw'
 
 # ISSO_ENABLED = True
@@ -226,14 +227,14 @@ ISSO_MAX_COMMENTS_NESTED = 'inf'
 # ISSO_AVATAR_FG =
 # ISSO_VOTING = True
 ########################################################################
-## Analytics
+# Analytics
 # GOOGLE_ANALYTICS =
 # GOSQUARED_SITENAME =
 # PIWIK_URL =
 # PIWIK_SSL_URL =
 # PIWIK_SITE_ID =
 ########################################################################
-## Qalal-Specific Settings
+# Qalal-Specific Settings
 ARTICLES_RECENT_TITLE = 'More, Here'
 ARTICLES_SHOW_RECENT = True
 ARTICLE_SHOW_DATE = True
