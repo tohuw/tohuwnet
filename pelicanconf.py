@@ -60,7 +60,7 @@ INDEX_SAVE_AS = 'index.html'
 
 # ARTICLE_PATHS = ['']
 ARTICLE_EXCLUDES = ['extras']
-ARTICLE_URL = '/articles/{slug}'
+ARTICLE_URL = 'articles/{slug}'
 ARTICLE_SAVE_AS = 'articles/{slug}.html'
 ARTICLE_LANG_URL = '{slug}-{lang}.html'
 ARTICLE_LANG_SAVE_AS = '{slug}-{lang}.html'
@@ -72,7 +72,7 @@ MONTH_ARCHIVE_SAVE_AS = 'archives/{date:%Y}/{date:%b}/index.html'
 DAY_ARCHIVE_SAVE_AS = ''
 NEWEST_FIRST_ARCHIVES = True
 
-DRAFT_URL = '/drafts/{slug}'
+DRAFT_URL = 'drafts/{slug}'
 DRAFT_SAVE_AS = 'drafts/{slug}.html'
 # DRAFT_LANG_URL = '{slug}-{lang}.html'
 # DRAFT_LANG_SAVE_AS = '{slug}-{lang}.html'
@@ -87,20 +87,20 @@ PAGE_URL = '{slug}'
 # PAGE_ORDER_BY = 'basename'
 
 CATEGORIES_SAVE_AS = 'topics/index.html'
-CATEGORY_URL = '/topics/{slug}'
+CATEGORY_URL = 'topics/{slug}'
 CATEGORY_SAVE_AS = 'topics/{slug}.html'
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'misc'
 REVERSE_CATEGORY_ORDER = False
 
 TAGS_SAVE_AS = 'tags/index.html'
-TAG_URL = '/tags/{slug}'
+TAG_URL = 'tags/{slug}'
 TAG_SAVE_AS = 'tags/{slug}.html'
 TAG_CLOUD_STEPS = 5
 TAG_CLOUD_MAX_ITEMS = 100
 
 AUTHORS_SAVE_AS = 'authors.html'
-AUTHOR_URL = '/author/{slug}'
+AUTHOR_URL = 'author/{slug}'
 AUTHOR_SAVE_AS = '/author/{slug}.html'
 ########################################################################
 # Metadata
@@ -198,7 +198,8 @@ TRANSLATION_FEED_RSS = None
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'tipue_search',
-    'better_figures_and_images'
+    'better_figures_and_images',
+    'post_stats'
 ]
 TYPOGRIFY = True
 # TYPOGRIFY_IGNORE_TAGS = []
@@ -241,6 +242,7 @@ ARTICLE_SHOW_DATE = True
 ARTICLE_SHOW_EDITINFO = True
 ARTICLE_SHOW_AUTHORS = True
 ARTICLE_SHOW_CATEGORY = True
+ARTICLE_SHOW_STATS = True
 ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_EDITINFO = True
