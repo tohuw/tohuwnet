@@ -1,6 +1,6 @@
-[submodule "plugins"]
-	path = plugins
-	url = https://github.com/getpelican/pelican-plugins
 [submodule "themes/qalal"]
 	path = themes/qalal
 	url = https://github.com/tohuw/qalal
+[submodule "plugins"]
+	path = plugins
+	url = https://github.com/getpelican/pelican-plugins
