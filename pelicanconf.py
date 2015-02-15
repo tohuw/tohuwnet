@@ -247,7 +247,7 @@ ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_EDITINFO = True
 CUSTOM_AUTHOR_URL = '/ron-scott-adams'
-SEARCHBOX_PLACEHOLDER = 'Search... (press enter to search)'
+SEARCHBOX_PLACEHOLDER = 'Search... (type & press enter)'
 LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
