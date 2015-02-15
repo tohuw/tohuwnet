@@ -81,7 +81,7 @@ WITH_FUTURE_DATES = True
 PAGE_PATHS = ['pages']
 PAGE_EXCLUDES = ['extras']
 PAGE_URL = '{slug}'
-# PAGE_SAVE_AS = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
 # PAGE_LANG_URL = '{slug}-{lang}.html'
 # PAGE_LANG_SAVE_AS = '{slug}-{lang}.html'
 # PAGE_ORDER_BY = 'basename'
@@ -204,7 +204,7 @@ PLUGINS = [
 TYPOGRIFY = True
 # TYPOGRIFY_IGNORE_TAGS = []
 MD_EXTENSIONS = [
-    'codehilite(css_class=highlight)',
+    'codehilite(noclasses=true, linenums=false, pygments_style=friendly)',
     'extra',
     'admonition',
 ]
@@ -247,6 +247,7 @@ ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_EDITINFO = True
 CUSTOM_AUTHOR_URL = '/ron-scott-adams'
+SEARCHBOX_PLACEHOLDER = 'Search... (press enter to search)'
 LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
