@@ -236,6 +236,7 @@ ISSO_MAX_COMMENTS_NESTED = 'inf'
 # PIWIK_SITE_ID =
 ########################################################################
 # Qalal-Specific Settings
+ARTICLES_RECENT_COUNT = 3
 ARTICLES_RECENT_TITLE = 'More, Here'
 ARTICLES_SHOW_RECENT = True
 ARTICLE_SHOW_DATE = True
@@ -252,6 +253,7 @@ LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
+CREDITS_SHOW = True
 LICENSE_SHOW = True
 LICENSE_URL = SITEURL + '/rights.html'
 LICENSE_TITLE= 'CC BY-NC-SA 4.0'
