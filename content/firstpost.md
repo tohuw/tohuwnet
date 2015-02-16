@@ -5,7 +5,7 @@ Image: /images/yakshaving.jpg
 Thumb: /images/yakshaving_thumb.jpg
 Summary: Well, you have to start somewhere.
 
-<div markdown="1">
+<div markdown="1" class="intro-image">
 ![An example of Yak Shaving (Copyright 20th Century Fox)]({filename}/images/mim-yakshaving.gif)
 </div>
 

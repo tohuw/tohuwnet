@@ -1,4 +1,4 @@
-Title: Fix Garbage Output from esxtop (and learn something along the way)
+Title: Fix Garbage Output from esxtop
 Slug: fix-garbage-output-from-esxtop
 Date: 2014-08-28 23:48:39
 Tags: vmware, esxi, cli, os x

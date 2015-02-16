@@ -252,3 +252,6 @@ LINKS_TITLE = 'More, Elsewhere'
 SOCIAL_TITLE = False
 FEED_TITLE = '<span class="fa-rss"></span>'
 TIPUE_SEARCH_ENABLED = 'tipue_search' in PLUGINS
+LICENSE_SHOW = True
+LICENSE_URL = SITEURL + '/rights.html'
+LICENSE_TITLE= 'CC BY-NC-SA 4.0'

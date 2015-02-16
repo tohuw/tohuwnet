@@ -7,7 +7,7 @@ Image: /images/gray-on-gold-dombrowski.jpg
 Thumb: /images/gray-on-gold-dombrowski_thumb.jpg
 Summary: The sky is swollen and bruised, pregnant with expectation.
 
-<div markdown="1">
+<div markdown="1" class="intro-image">
 [![Gray on Gold, by Quinn Dombrowski (CC BY-SA 2.0)]({filename}/images/gray-on-gold-dombrowski.jpg "Gray on Gold, by Quinn Dombrowski (CC BY-SA 2.0)")](https://www.flickr.com/photos/quinnanya/3924643651/in/photolist-6YNPPR-7Jfn2c-cGGDj-cGGL2-cGGPu-cGGLL-cGGHE-53bUwT-gtfyz-rVa4F-NHjNp-rVaaw-jtmNt-hWquJ-gtfyy-gtfyB-hczhA-geCpD-c38QXy-gtgLu-hczhB-hafod-gbC8w-c38QXL-65Evjs-gbBL3-gbBL2-dwetf-6gM5tX-geCpB-8DUF5M-gbC8x-nRqBA-6hfffu-6G4oDn-9doJVs-8qcDEH-3ZWeFf-4sQUFm-6YML2X-8hsuj7-65Advn-6YSoU9-gesyx-gtfyw-----7JyMts)
 </div>
 
