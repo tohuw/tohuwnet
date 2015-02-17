@@ -1,7 +1,7 @@
 Title: Fix Garbage Output from esxtop
 Slug: fix-garbage-output-from-esxtop
 Date: 2014-08-28 23:48:39
-Tags: vmware, esxi, cli, os x
+Tags: vmware, esxi, os x
 Category: virtualization
 Image: /images/osx-set-term.png
 Thumb: /images/osx-set-term_thumb.png

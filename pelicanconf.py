@@ -151,12 +151,16 @@ DISPLAY_CATEGORIES_ON_MENU = False
 ########################################################################
 # Links
 LINKS = (
-    ('<span class="links-name">HighExecutive</span> (Ruminations of my illustrious wife)',
+    ('<div class="links-name">HighExecutive</div> (Ruminations of my illustrious wife)',
      'http://highexecutive.net'),
-    ('<span class="links-name">UberMarianne</span> (My sister-in-law introspects)',
+    ('<div class="links-name">UberMarianne</div> (My sister-in-law introspects)',
      'http://ubermarianne.net'),
-    ('<span class="links-name">Dadhacker</span> (An old and new school cantankerous coder)',
-     'http://dadhacker.com')
+    ('<div class="links-name">Dadhacker</div> (Instant wisdom worth what you paid)',
+     'http://dadhacker.com'),
+    ('<div class="links-name">Punching Clouds</div> (A practical and interesting virtualization blog)',
+     'http://punchingclouds.com'),
+    ('<div class="links-name">Cormac Hogan</div> (Virtualization and storage at a comprehenisble depth)',
+     'http://cormachogan.com')
 )
 TWITTER_USERNAME = 'tohuw'
 GITHUB_URL = "https://github.com/tohuw"
@@ -247,6 +251,7 @@ ARTICLE_SHOW_STATS = 'post_stats' in PLUGINS
 ARTICLE_SHOW_TAGS = True
 ARTICLE_SHOW_SHARE = False
 PAGE_SHOW_EDITINFO = True
+TAG_CLOUD_SUMMARY_MAX_ITEMS = 5
 CUSTOM_AUTHOR_URL = '/ron-scott-adams'
 SEARCHBOX_PLACEHOLDER = 'Search... (type & press enter)'
 LINKS_TITLE = 'More, Elsewhere'

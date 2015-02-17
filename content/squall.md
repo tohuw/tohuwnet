@@ -1,7 +1,7 @@
 Title: Squall
 Slug: squall
 Date: 2014-08-29 23:39:01
-Tags: 100 words, fiction
+Tags: fiction
 Category: creative writing
 Image: /images/gray-on-gold-dombrowski.jpg
 Thumb: /images/gray-on-gold-dombrowski_thumb.jpg
